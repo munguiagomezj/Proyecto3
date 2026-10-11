@@ -1,0 +1,27 @@
+[project]
+name = "empleo-vivienda-espana"
+version = "1.0.0"
+description = "Análisis del paro y del precio de la vivienda en España con datos abiertos de Eurostat"
+requires-python = ">=3.12"
+dependencies = ["pandas>=2.2", "requests>=2.32", "plotly>=5.24", "jinja2>=3.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "jupyter>=1.1", "nbconvert>=7.16"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["analisis*", "scripts*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

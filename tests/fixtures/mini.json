@@ -1,0 +1,12 @@
+{
+  "version": "2.0",
+  "class": "dataset",
+  "id": ["freq", "geo", "time"],
+  "size": [1, 2, 3],
+  "dimension": {
+    "freq": {"category": {"index": {"M": 0}, "label": {"M": "Monthly"}}},
+    "geo": {"category": {"index": {"ES": 0, "EU27_2020": 1}, "label": {"ES": "Spain", "EU27_2020": "European Union - 27 countries (from 2020)"}}},
+    "time": {"category": {"index": {"2024-01": 0, "2024-02": 1, "2024-03": 2}}}
+  },
+  "value": {"0": 11.6, "1": 11.5, "2": 11.4, "3": 6.0, "5": 5.9}
+}
