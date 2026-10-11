@@ -1,0 +1,721 @@
+codigo,region,anio,grupo,tasa
+ES,España,2008,15 a 24 años,24.50
+ES,España,2009,15 a 24 años,37.70
+ES,España,2010,15 a 24 años,41.50
+ES,España,2011,15 a 24 años,46.20
+ES,España,2012,15 a 24 años,52.90
+ES,España,2013,15 a 24 años,55.50
+ES,España,2014,15 a 24 años,53.20
+ES,España,2015,15 a 24 años,48.30
+ES,España,2016,15 a 24 años,44.40
+ES,España,2017,15 a 24 años,38.60
+ES,España,2018,15 a 24 años,34.30
+ES,España,2019,15 a 24 años,32.50
+ES,España,2020,15 a 24 años,38.30
+ES,España,2021,15 a 24 años,35.00
+ES,España,2022,15 a 24 años,29.70
+ES,España,2023,15 a 24 años,28.70
+ES,España,2024,15 a 24 años,26.50
+ES,España,2025,15 a 24 años,24.90
+ES11,Galicia,2008,15 a 24 años,21.10
+ES11,Galicia,2009,15 a 24 años,30.40
+ES11,Galicia,2010,15 a 24 años,35.40
+ES11,Galicia,2011,15 a 24 años,37.70
+ES11,Galicia,2012,15 a 24 años,45.20
+ES11,Galicia,2013,15 a 24 años,49.90
+ES11,Galicia,2014,15 a 24 años,48.50
+ES11,Galicia,2015,15 a 24 años,43.50
+ES11,Galicia,2016,15 a 24 años,40.30
+ES11,Galicia,2017,15 a 24 años,34.50
+ES11,Galicia,2018,15 a 24 años,32.50
+ES11,Galicia,2019,15 a 24 años,27.80
+ES11,Galicia,2020,15 a 24 años,33.10
+ES11,Galicia,2021,15 a 24 años,32.00
+ES11,Galicia,2022,15 a 24 años,32.70
+ES11,Galicia,2023,15 a 24 años,24.60
+ES11,Galicia,2024,15 a 24 años,25.70
+ES11,Galicia,2025,15 a 24 años,24.70
+ES12,Asturias,2008,15 a 24 años,21.60
+ES12,Asturias,2009,15 a 24 años,35.00
+ES12,Asturias,2010,15 a 24 años,37.30
+ES12,Asturias,2011,15 a 24 años,48.50
+ES12,Asturias,2012,15 a 24 años,48.90
+ES12,Asturias,2013,15 a 24 años,55.00
+ES12,Asturias,2014,15 a 24 años,45.10
+ES12,Asturias,2015,15 a 24 años,41.90
+ES12,Asturias,2016,15 a 24 años,47.90
+ES12,Asturias,2017,15 a 24 años,36.80
+ES12,Asturias,2018,15 a 24 años,37.30
+ES12,Asturias,2019,15 a 24 años,28.70
+ES12,Asturias,2020,15 a 24 años,35.80
+ES12,Asturias,2021,15 a 24 años,29.40
+ES12,Asturias,2022,15 a 24 años,38.00
+ES12,Asturias,2023,15 a 24 años,29.20
+ES12,Asturias,2024,15 a 24 años,32.90
+ES12,Asturias,2025,15 a 24 años,27.90
+ES13,Cantabria,2008,15 a 24 años,19.20
+ES13,Cantabria,2009,15 a 24 años,30.00
+ES13,Cantabria,2010,15 a 24 años,36.10
+ES13,Cantabria,2011,15 a 24 años,40.60
+ES13,Cantabria,2012,15 a 24 años,41.70
+ES13,Cantabria,2013,15 a 24 años,52.50
+ES13,Cantabria,2014,15 a 24 años,49.20
+ES13,Cantabria,2015,15 a 24 años,39.60
+ES13,Cantabria,2016,15 a 24 años,32.20
+ES13,Cantabria,2017,15 a 24 años,35.60
+ES13,Cantabria,2018,15 a 24 años,32.80
+ES13,Cantabria,2019,15 a 24 años,30.90
+ES13,Cantabria,2020,15 a 24 años,42.00
+ES13,Cantabria,2021,15 a 24 años,26.60
+ES13,Cantabria,2022,15 a 24 años,27.00
+ES13,Cantabria,2023,15 a 24 años,19.90
+ES13,Cantabria,2024,15 a 24 años,21.70
+ES13,Cantabria,2025,15 a 24 años,19.80
+ES21,País Vasco,2008,15 a 24 años,19.50
+ES21,País Vasco,2009,15 a 24 años,31.60
+ES21,País Vasco,2010,15 a 24 años,30.60
+ES21,País Vasco,2011,15 a 24 años,34.10
+ES21,País Vasco,2012,15 a 24 años,42.70
+ES21,País Vasco,2013,15 a 24 años,46.50
+ES21,País Vasco,2014,15 a 24 años,45.00
+ES21,País Vasco,2015,15 a 24 años,40.40
+ES21,País Vasco,2016,15 a 24 años,34.90
+ES21,País Vasco,2017,15 a 24 años,27.30
+ES21,País Vasco,2018,15 a 24 años,25.80
+ES21,País Vasco,2019,15 a 24 años,27.40
+ES21,País Vasco,2020,15 a 24 años,33.20
+ES21,País Vasco,2021,15 a 24 años,34.00
+ES21,País Vasco,2022,15 a 24 años,25.50
+ES21,País Vasco,2023,15 a 24 años,23.80
+ES21,País Vasco,2024,15 a 24 años,23.20
+ES21,País Vasco,2025,15 a 24 años,18.60
+ES22,Navarra,2008,15 a 24 años,18.80
+ES22,Navarra,2009,15 a 24 años,30.60
+ES22,Navarra,2010,15 a 24 años,30.40
+ES22,Navarra,2011,15 a 24 años,29.30
+ES22,Navarra,2012,15 a 24 años,40.10
+ES22,Navarra,2013,15 a 24 años,48.30
+ES22,Navarra,2014,15 a 24 años,45.20
+ES22,Navarra,2015,15 a 24 años,38.10
+ES22,Navarra,2016,15 a 24 años,33.90
+ES22,Navarra,2017,15 a 24 años,31.20
+ES22,Navarra,2018,15 a 24 años,26.20
+ES22,Navarra,2019,15 a 24 años,22.90
+ES22,Navarra,2020,15 a 24 años,25.90
+ES22,Navarra,2021,15 a 24 años,21.90
+ES22,Navarra,2022,15 a 24 años,22.50
+ES22,Navarra,2023,15 a 24 años,25.80
+ES22,Navarra,2024,15 a 24 años,22.90
+ES22,Navarra,2025,15 a 24 años,20.90
+ES23,La Rioja,2008,15 a 24 años,21.70
+ES23,La Rioja,2009,15 a 24 años,33.10
+ES23,La Rioja,2010,15 a 24 años,38.20
+ES23,La Rioja,2011,15 a 24 años,46.10
+ES23,La Rioja,2012,15 a 24 años,50.10
+ES23,La Rioja,2013,15 a 24 años,48.00
+ES23,La Rioja,2014,15 a 24 años,44.80
+ES23,La Rioja,2015,15 a 24 años,40.60
+ES23,La Rioja,2016,15 a 24 años,36.30
+ES23,La Rioja,2017,15 a 24 años,29.60
+ES23,La Rioja,2018,15 a 24 años,25.50
+ES23,La Rioja,2019,15 a 24 años,25.00
+ES23,La Rioja,2020,15 a 24 años,26.60
+ES23,La Rioja,2021,15 a 24 años,30.60
+ES23,La Rioja,2022,15 a 24 años,25.90
+ES23,La Rioja,2023,15 a 24 años,27.60
+ES23,La Rioja,2024,15 a 24 años,31.70
+ES23,La Rioja,2025,15 a 24 años,25.50
+ES24,Aragón,2008,15 a 24 años,19.80
+ES24,Aragón,2009,15 a 24 años,31.70
+ES24,Aragón,2010,15 a 24 años,31.90
+ES24,Aragón,2011,15 a 24 años,39.90
+ES24,Aragón,2012,15 a 24 años,42.40
+ES24,Aragón,2013,15 a 24 años,50.20
+ES24,Aragón,2014,15 a 24 años,51.50
+ES24,Aragón,2015,15 a 24 años,41.20
+ES24,Aragón,2016,15 a 24 años,36.70
+ES24,Aragón,2017,15 a 24 años,30.50
+ES24,Aragón,2018,15 a 24 años,27.50
+ES24,Aragón,2019,15 a 24 años,27.40
+ES24,Aragón,2020,15 a 24 años,28.40
+ES24,Aragón,2021,15 a 24 años,25.30
+ES24,Aragón,2022,15 a 24 años,24.60
+ES24,Aragón,2023,15 a 24 años,22.20
+ES24,Aragón,2024,15 a 24 años,23.40
+ES24,Aragón,2025,15 a 24 años,24.10
+ES30,Madrid,2008,15 a 24 años,20.80
+ES30,Madrid,2009,15 a 24 años,34.20
+ES30,Madrid,2010,15 a 24 años,37.10
+ES30,Madrid,2011,15 a 24 años,40.80
+ES30,Madrid,2012,15 a 24 años,48.10
+ES30,Madrid,2013,15 a 24 años,48.80
+ES30,Madrid,2014,15 a 24 años,49.00
+ES30,Madrid,2015,15 a 24 años,44.20
+ES30,Madrid,2016,15 a 24 años,40.70
+ES30,Madrid,2017,15 a 24 años,34.70
+ES30,Madrid,2018,15 a 24 años,27.50
+ES30,Madrid,2019,15 a 24 años,29.00
+ES30,Madrid,2020,15 a 24 años,31.80
+ES30,Madrid,2021,15 a 24 años,29.50
+ES30,Madrid,2022,15 a 24 años,27.80
+ES30,Madrid,2023,15 a 24 años,27.40
+ES30,Madrid,2024,15 a 24 años,20.40
+ES30,Madrid,2025,15 a 24 años,19.30
+ES41,Castilla y León,2008,15 a 24 años,22.50
+ES41,Castilla y León,2009,15 a 24 años,32.00
+ES41,Castilla y León,2010,15 a 24 años,34.00
+ES41,Castilla y León,2011,15 a 24 años,38.60
+ES41,Castilla y León,2012,15 a 24 años,48.10
+ES41,Castilla y León,2013,15 a 24 años,49.70
+ES41,Castilla y León,2014,15 a 24 años,50.40
+ES41,Castilla y León,2015,15 a 24 años,48.00
+ES41,Castilla y León,2016,15 a 24 años,39.00
+ES41,Castilla y León,2017,15 a 24 años,36.20
+ES41,Castilla y León,2018,15 a 24 años,28.30
+ES41,Castilla y León,2019,15 a 24 años,29.50
+ES41,Castilla y León,2020,15 a 24 años,34.60
+ES41,Castilla y León,2021,15 a 24 años,30.20
+ES41,Castilla y León,2022,15 a 24 años,28.00
+ES41,Castilla y León,2023,15 a 24 años,28.00
+ES41,Castilla y León,2024,15 a 24 años,27.70
+ES41,Castilla y León,2025,15 a 24 años,24.70
+ES42,Castilla-La Mancha,2008,15 a 24 años,22.90
+ES42,Castilla-La Mancha,2009,15 a 24 años,36.30
+ES42,Castilla-La Mancha,2010,15 a 24 años,42.90
+ES42,Castilla-La Mancha,2011,15 a 24 años,47.70
+ES42,Castilla-La Mancha,2012,15 a 24 años,54.50
+ES42,Castilla-La Mancha,2013,15 a 24 años,61.50
+ES42,Castilla-La Mancha,2014,15 a 24 años,61.30
+ES42,Castilla-La Mancha,2015,15 a 24 años,57.20
+ES42,Castilla-La Mancha,2016,15 a 24 años,50.90
+ES42,Castilla-La Mancha,2017,15 a 24 años,44.40
+ES42,Castilla-La Mancha,2018,15 a 24 años,43.30
+ES42,Castilla-La Mancha,2019,15 a 24 años,39.10
+ES42,Castilla-La Mancha,2020,15 a 24 años,39.40
+ES42,Castilla-La Mancha,2021,15 a 24 años,34.90
+ES42,Castilla-La Mancha,2022,15 a 24 años,33.80
+ES42,Castilla-La Mancha,2023,15 a 24 años,29.70
+ES42,Castilla-La Mancha,2024,15 a 24 años,29.00
+ES42,Castilla-La Mancha,2025,15 a 24 años,27.60
+ES43,Extremadura,2008,15 a 24 años,29.00
+ES43,Extremadura,2009,15 a 24 años,41.40
+ES43,Extremadura,2010,15 a 24 años,45.80
+ES43,Extremadura,2011,15 a 24 años,51.00
+ES43,Extremadura,2012,15 a 24 años,61.90
+ES43,Extremadura,2013,15 a 24 años,61.50
+ES43,Extremadura,2014,15 a 24 años,55.40
+ES43,Extremadura,2015,15 a 24 años,55.40
+ES43,Extremadura,2016,15 a 24 años,50.30
+ES43,Extremadura,2017,15 a 24 años,48.60
+ES43,Extremadura,2018,15 a 24 años,46.60
+ES43,Extremadura,2019,15 a 24 años,44.60
+ES43,Extremadura,2020,15 a 24 años,47.20
+ES43,Extremadura,2021,15 a 24 años,47.60
+ES43,Extremadura,2022,15 a 24 años,40.30
+ES43,Extremadura,2023,15 a 24 años,37.20
+ES43,Extremadura,2024,15 a 24 años,35.40
+ES43,Extremadura,2025,15 a 24 años,37.40
+ES51,Cataluña,2008,15 a 24 años,20.10
+ES51,Cataluña,2009,15 a 24 años,36.90
+ES51,Cataluña,2010,15 a 24 años,39.10
+ES51,Cataluña,2011,15 a 24 años,43.80
+ES51,Cataluña,2012,15 a 24 años,50.40
+ES51,Cataluña,2013,15 a 24 años,50.20
+ES51,Cataluña,2014,15 a 24 años,47.10
+ES51,Cataluña,2015,15 a 24 años,42.30
+ES51,Cataluña,2016,15 a 24 años,34.30
+ES51,Cataluña,2017,15 a 24 años,30.40
+ES51,Cataluña,2018,15 a 24 años,27.70
+ES51,Cataluña,2019,15 a 24 años,26.20
+ES51,Cataluña,2020,15 a 24 años,34.00
+ES51,Cataluña,2021,15 a 24 años,28.90
+ES51,Cataluña,2022,15 a 24 años,24.50
+ES51,Cataluña,2023,15 a 24 años,22.40
+ES51,Cataluña,2024,15 a 24 años,22.10
+ES51,Cataluña,2025,15 a 24 años,19.10
+ES52,C. Valenciana,2008,15 a 24 años,26.20
+ES52,C. Valenciana,2009,15 a 24 años,39.50
+ES52,C. Valenciana,2010,15 a 24 años,42.20
+ES52,C. Valenciana,2011,15 a 24 años,51.40
+ES52,C. Valenciana,2012,15 a 24 años,52.90
+ES52,C. Valenciana,2013,15 a 24 años,56.30
+ES52,C. Valenciana,2014,15 a 24 años,56.70
+ES52,C. Valenciana,2015,15 a 24 años,48.30
+ES52,C. Valenciana,2016,15 a 24 años,45.50
+ES52,C. Valenciana,2017,15 a 24 años,41.60
+ES52,C. Valenciana,2018,15 a 24 años,34.30
+ES52,C. Valenciana,2019,15 a 24 años,31.10
+ES52,C. Valenciana,2020,15 a 24 años,36.40
+ES52,C. Valenciana,2021,15 a 24 años,37.30
+ES52,C. Valenciana,2022,15 a 24 años,28.60
+ES52,C. Valenciana,2023,15 a 24 años,28.30
+ES52,C. Valenciana,2024,15 a 24 años,25.60
+ES52,C. Valenciana,2025,15 a 24 años,30.50
+ES53,Baleares,2008,15 a 24 años,24.40
+ES53,Baleares,2009,15 a 24 años,32.10
+ES53,Baleares,2010,15 a 24 años,42.70
+ES53,Baleares,2011,15 a 24 años,42.70
+ES53,Baleares,2012,15 a 24 años,48.90
+ES53,Baleares,2013,15 a 24 años,45.20
+ES53,Baleares,2014,15 a 24 años,44.40
+ES53,Baleares,2015,15 a 24 años,42.20
+ES53,Baleares,2016,15 a 24 años,38.90
+ES53,Baleares,2017,15 a 24 años,30.80
+ES53,Baleares,2018,15 a 24 años,26.90
+ES53,Baleares,2019,15 a 24 años,29.20
+ES53,Baleares,2020,15 a 24 años,41.60
+ES53,Baleares,2021,15 a 24 años,33.10
+ES53,Baleares,2022,15 a 24 años,22.90
+ES53,Baleares,2023,15 a 24 años,20.30
+ES53,Baleares,2024,15 a 24 años,23.50
+ES53,Baleares,2025,15 a 24 años,17.10
+ES61,Andalucía,2008,15 a 24 años,31.10
+ES61,Andalucía,2009,15 a 24 años,45.00
+ES61,Andalucía,2010,15 a 24 años,49.90
+ES61,Andalucía,2011,15 a 24 años,54.10
+ES61,Andalucía,2012,15 a 24 años,61.90
+ES61,Andalucía,2013,15 a 24 años,66.00
+ES61,Andalucía,2014,15 a 24 años,61.50
+ES61,Andalucía,2015,15 a 24 años,56.80
+ES61,Andalucía,2016,15 a 24 años,57.90
+ES61,Andalucía,2017,15 a 24 años,49.00
+ES61,Andalucía,2018,15 a 24 años,46.70
+ES61,Andalucía,2019,15 a 24 años,41.70
+ES61,Andalucía,2020,15 a 24 años,49.50
+ES61,Andalucía,2021,15 a 24 años,44.20
+ES61,Andalucía,2022,15 a 24 años,35.30
+ES61,Andalucía,2023,15 a 24 años,39.80
+ES61,Andalucía,2024,15 a 24 años,36.90
+ES61,Andalucía,2025,15 a 24 años,32.70
+ES62,Murcia,2008,15 a 24 años,23.40
+ES62,Murcia,2009,15 a 24 años,33.70
+ES62,Murcia,2010,15 a 24 años,39.40
+ES62,Murcia,2011,15 a 24 años,48.00
+ES62,Murcia,2012,15 a 24 años,50.40
+ES62,Murcia,2013,15 a 24 años,53.50
+ES62,Murcia,2014,15 a 24 años,52.40
+ES62,Murcia,2015,15 a 24 años,50.60
+ES62,Murcia,2016,15 a 24 años,45.70
+ES62,Murcia,2017,15 a 24 años,39.50
+ES62,Murcia,2018,15 a 24 años,38.20
+ES62,Murcia,2019,15 a 24 años,33.40
+ES62,Murcia,2020,15 a 24 años,37.50
+ES62,Murcia,2021,15 a 24 años,31.60
+ES62,Murcia,2022,15 a 24 años,29.10
+ES62,Murcia,2023,15 a 24 años,28.60
+ES62,Murcia,2024,15 a 24 años,27.20
+ES62,Murcia,2025,15 a 24 años,25.40
+ES63,Ceuta,2008,15 a 24 años,39.60
+ES63,Ceuta,2009,15 a 24 años,35.70
+ES63,Ceuta,2010,15 a 24 años,62.10
+ES63,Ceuta,2011,15 a 24 años,63.90
+ES63,Ceuta,2012,15 a 24 años,70.40
+ES63,Ceuta,2013,15 a 24 años,73.40
+ES63,Ceuta,2014,15 a 24 años,67.50
+ES63,Ceuta,2015,15 a 24 años,79.20
+ES63,Ceuta,2016,15 a 24 años,63.30
+ES63,Ceuta,2017,15 a 24 años,54.40
+ES63,Ceuta,2018,15 a 24 años,62.40
+ES63,Ceuta,2019,15 a 24 años,52.70
+ES63,Ceuta,2020,15 a 24 años,63.10
+ES63,Ceuta,2021,15 a 24 años,67.20
+ES63,Ceuta,2022,15 a 24 años,51.40
+ES63,Ceuta,2023,15 a 24 años,59.80
+ES63,Ceuta,2024,15 a 24 años,66.50
+ES63,Ceuta,2025,15 a 24 años,57.50
+ES64,Melilla,2008,15 a 24 años,38.20
+ES64,Melilla,2009,15 a 24 años,38.30
+ES64,Melilla,2010,15 a 24 años,52.00
+ES64,Melilla,2011,15 a 24 años,63.80
+ES64,Melilla,2012,15 a 24 años,60.10
+ES64,Melilla,2013,15 a 24 años,54.00
+ES64,Melilla,2014,15 a 24 años,57.30
+ES64,Melilla,2015,15 a 24 años,72.00
+ES64,Melilla,2016,15 a 24 años,69.10
+ES64,Melilla,2017,15 a 24 años,62.70
+ES64,Melilla,2018,15 a 24 años,66.10
+ES64,Melilla,2019,15 a 24 años,64.00
+ES64,Melilla,2020,15 a 24 años,71.00
+ES64,Melilla,2021,15 a 24 años,57.70
+ES64,Melilla,2022,15 a 24 años,60.70
+ES64,Melilla,2023,15 a 24 años,47.30
+ES64,Melilla,2024,15 a 24 años,62.60
+ES64,Melilla,2025,15 a 24 años,60.20
+ES70,Canarias,2008,15 a 24 años,31.90
+ES70,Canarias,2009,15 a 24 años,47.80
+ES70,Canarias,2010,15 a 24 años,52.00
+ES70,Canarias,2011,15 a 24 años,50.80
+ES70,Canarias,2012,15 a 24 años,62.30
+ES70,Canarias,2013,15 a 24 años,65.30
+ES70,Canarias,2014,15 a 24 años,57.40
+ES70,Canarias,2015,15 a 24 años,53.50
+ES70,Canarias,2016,15 a 24 años,51.30
+ES70,Canarias,2017,15 a 24 años,45.30
+ES70,Canarias,2018,15 a 24 años,38.60
+ES70,Canarias,2019,15 a 24 años,42.20
+ES70,Canarias,2020,15 a 24 años,51.60
+ES70,Canarias,2021,15 a 24 años,57.00
+ES70,Canarias,2022,15 a 24 años,42.70
+ES70,Canarias,2023,15 a 24 años,32.80
+ES70,Canarias,2024,15 a 24 años,28.50
+ES70,Canarias,2025,15 a 24 años,29.50
+ES,España,2008,Total,11.30
+ES,España,2009,Total,17.90
+ES,España,2010,Total,19.90
+ES,España,2011,Total,21.40
+ES,España,2012,Total,24.80
+ES,España,2013,Total,26.10
+ES,España,2014,Total,24.50
+ES,España,2015,Total,22.10
+ES,España,2016,Total,19.60
+ES,España,2017,Total,17.20
+ES,España,2018,Total,15.30
+ES,España,2019,Total,14.10
+ES,España,2020,Total,15.50
+ES,España,2021,Total,14.90
+ES,España,2022,Total,13.00
+ES,España,2023,Total,12.20
+ES,España,2024,Total,11.40
+ES,España,2025,Total,10.50
+ES11,Galicia,2008,Total,8.60
+ES11,Galicia,2009,Total,12.40
+ES11,Galicia,2010,Total,15.30
+ES11,Galicia,2011,Total,17.30
+ES11,Galicia,2012,Total,20.60
+ES11,Galicia,2013,Total,22.10
+ES11,Galicia,2014,Total,21.70
+ES11,Galicia,2015,Total,19.30
+ES11,Galicia,2016,Total,17.20
+ES11,Galicia,2017,Total,15.70
+ES11,Galicia,2018,Total,13.30
+ES11,Galicia,2019,Total,11.80
+ES11,Galicia,2020,Total,12.00
+ES11,Galicia,2021,Total,11.60
+ES11,Galicia,2022,Total,11.00
+ES11,Galicia,2023,Total,9.70
+ES11,Galicia,2024,Total,9.40
+ES11,Galicia,2025,Total,8.40
+ES12,Asturias,2008,Total,8.50
+ES12,Asturias,2009,Total,13.40
+ES12,Asturias,2010,Total,15.90
+ES12,Asturias,2011,Total,17.80
+ES12,Asturias,2012,Total,21.80
+ES12,Asturias,2013,Total,24.10
+ES12,Asturias,2014,Total,21.10
+ES12,Asturias,2015,Total,19.10
+ES12,Asturias,2016,Total,17.60
+ES12,Asturias,2017,Total,13.70
+ES12,Asturias,2018,Total,13.60
+ES12,Asturias,2019,Total,14.20
+ES12,Asturias,2020,Total,14.10
+ES12,Asturias,2021,Total,12.30
+ES12,Asturias,2022,Total,12.50
+ES12,Asturias,2023,Total,12.10
+ES12,Asturias,2024,Total,10.10
+ES12,Asturias,2025,Total,8.80
+ES13,Cantabria,2008,Total,7.20
+ES13,Cantabria,2009,Total,12.00
+ES13,Cantabria,2010,Total,13.70
+ES13,Cantabria,2011,Total,15.30
+ES13,Cantabria,2012,Total,17.80
+ES13,Cantabria,2013,Total,20.50
+ES13,Cantabria,2014,Total,19.40
+ES13,Cantabria,2015,Total,17.70
+ES13,Cantabria,2016,Total,14.90
+ES13,Cantabria,2017,Total,13.60
+ES13,Cantabria,2018,Total,10.70
+ES13,Cantabria,2019,Total,10.30
+ES13,Cantabria,2020,Total,12.20
+ES13,Cantabria,2021,Total,11.30
+ES13,Cantabria,2022,Total,9.60
+ES13,Cantabria,2023,Total,8.10
+ES13,Cantabria,2024,Total,7.80
+ES13,Cantabria,2025,Total,7.30
+ES21,País Vasco,2008,Total,6.60
+ES21,País Vasco,2009,Total,11.30
+ES21,País Vasco,2010,Total,10.70
+ES21,País Vasco,2011,Total,12.40
+ES21,País Vasco,2012,Total,15.60
+ES21,País Vasco,2013,Total,16.60
+ES21,País Vasco,2014,Total,16.30
+ES21,País Vasco,2015,Total,14.80
+ES21,País Vasco,2016,Total,12.60
+ES21,País Vasco,2017,Total,11.30
+ES21,País Vasco,2018,Total,10.00
+ES21,País Vasco,2019,Total,9.20
+ES21,País Vasco,2020,Total,9.50
+ES21,País Vasco,2021,Total,10.30
+ES21,País Vasco,2022,Total,8.90
+ES21,País Vasco,2023,Total,7.70
+ES21,País Vasco,2024,Total,8.10
+ES21,País Vasco,2025,Total,7.30
+ES22,Navarra,2008,Total,6.80
+ES22,Navarra,2009,Total,10.80
+ES22,Navarra,2010,Total,11.90
+ES22,Navarra,2011,Total,13.00
+ES22,Navarra,2012,Total,16.20
+ES22,Navarra,2013,Total,18.00
+ES22,Navarra,2014,Total,15.70
+ES22,Navarra,2015,Total,13.80
+ES22,Navarra,2016,Total,12.50
+ES22,Navarra,2017,Total,10.20
+ES22,Navarra,2018,Total,10.00
+ES22,Navarra,2019,Total,8.20
+ES22,Navarra,2020,Total,10.10
+ES22,Navarra,2021,Total,10.70
+ES22,Navarra,2022,Total,9.70
+ES22,Navarra,2023,Total,9.90
+ES22,Navarra,2024,Total,7.60
+ES22,Navarra,2025,Total,7.70
+ES23,La Rioja,2008,Total,7.90
+ES23,La Rioja,2009,Total,12.70
+ES23,La Rioja,2010,Total,14.20
+ES23,La Rioja,2011,Total,17.20
+ES23,La Rioja,2012,Total,20.60
+ES23,La Rioja,2013,Total,20.00
+ES23,La Rioja,2014,Total,18.20
+ES23,La Rioja,2015,Total,15.40
+ES23,La Rioja,2016,Total,13.50
+ES23,La Rioja,2017,Total,12.00
+ES23,La Rioja,2018,Total,10.40
+ES23,La Rioja,2019,Total,10.00
+ES23,La Rioja,2020,Total,10.80
+ES23,La Rioja,2021,Total,11.60
+ES23,La Rioja,2022,Total,9.60
+ES23,La Rioja,2023,Total,9.40
+ES23,La Rioja,2024,Total,9.70
+ES23,La Rioja,2025,Total,8.10
+ES24,Aragón,2008,Total,7.30
+ES24,Aragón,2009,Total,13.10
+ES24,Aragón,2010,Total,15.00
+ES24,Aragón,2011,Total,17.10
+ES24,Aragón,2012,Total,18.70
+ES24,Aragón,2013,Total,21.40
+ES24,Aragón,2014,Total,20.20
+ES24,Aragón,2015,Total,16.30
+ES24,Aragón,2016,Total,14.80
+ES24,Aragón,2017,Total,11.70
+ES24,Aragón,2018,Total,10.60
+ES24,Aragón,2019,Total,10.00
+ES24,Aragón,2020,Total,11.70
+ES24,Aragón,2021,Total,10.30
+ES24,Aragón,2022,Total,9.60
+ES24,Aragón,2023,Total,8.60
+ES24,Aragón,2024,Total,8.10
+ES24,Aragón,2025,Total,8.00
+ES30,Madrid,2008,Total,8.60
+ES30,Madrid,2009,Total,13.90
+ES30,Madrid,2010,Total,15.90
+ES30,Madrid,2011,Total,16.40
+ES30,Madrid,2012,Total,18.60
+ES30,Madrid,2013,Total,19.80
+ES30,Madrid,2014,Total,18.80
+ES30,Madrid,2015,Total,17.10
+ES30,Madrid,2016,Total,15.70
+ES30,Madrid,2017,Total,13.40
+ES30,Madrid,2018,Total,12.20
+ES30,Madrid,2019,Total,10.60
+ES30,Madrid,2020,Total,12.50
+ES30,Madrid,2021,Total,11.70
+ES30,Madrid,2022,Total,11.20
+ES30,Madrid,2023,Total,10.00
+ES30,Madrid,2024,Total,9.00
+ES30,Madrid,2025,Total,8.00
+ES41,Castilla y León,2008,Total,9.60
+ES41,Castilla y León,2009,Total,14.00
+ES41,Castilla y León,2010,Total,15.80
+ES41,Castilla y León,2011,Total,16.90
+ES41,Castilla y León,2012,Total,19.80
+ES41,Castilla y León,2013,Total,21.80
+ES41,Castilla y León,2014,Total,20.80
+ES41,Castilla y León,2015,Total,18.30
+ES41,Castilla y León,2016,Total,15.80
+ES41,Castilla y León,2017,Total,14.10
+ES41,Castilla y León,2018,Total,12.10
+ES41,Castilla y León,2019,Total,11.60
+ES41,Castilla y León,2020,Total,12.10
+ES41,Castilla y León,2021,Total,11.60
+ES41,Castilla y León,2022,Total,9.90
+ES41,Castilla y León,2023,Total,9.70
+ES41,Castilla y León,2024,Total,9.40
+ES41,Castilla y León,2025,Total,8.60
+ES42,Castilla-La Mancha,2008,Total,11.70
+ES42,Castilla-La Mancha,2009,Total,18.90
+ES42,Castilla-La Mancha,2010,Total,21.20
+ES42,Castilla-La Mancha,2011,Total,23.10
+ES42,Castilla-La Mancha,2012,Total,28.60
+ES42,Castilla-La Mancha,2013,Total,30.00
+ES42,Castilla-La Mancha,2014,Total,29.00
+ES42,Castilla-La Mancha,2015,Total,26.40
+ES42,Castilla-La Mancha,2016,Total,23.60
+ES42,Castilla-La Mancha,2017,Total,20.80
+ES42,Castilla-La Mancha,2018,Total,18.20
+ES42,Castilla-La Mancha,2019,Total,16.20
+ES42,Castilla-La Mancha,2020,Total,17.70
+ES42,Castilla-La Mancha,2021,Total,15.70
+ES42,Castilla-La Mancha,2022,Total,14.60
+ES42,Castilla-La Mancha,2023,Total,13.20
+ES42,Castilla-La Mancha,2024,Total,13.30
+ES42,Castilla-La Mancha,2025,Total,12.80
+ES43,Extremadura,2008,Total,15.40
+ES43,Extremadura,2009,Total,20.60
+ES43,Extremadura,2010,Total,23.00
+ES43,Extremadura,2011,Total,25.10
+ES43,Extremadura,2012,Total,33.10
+ES43,Extremadura,2013,Total,33.90
+ES43,Extremadura,2014,Total,29.80
+ES43,Extremadura,2015,Total,29.10
+ES43,Extremadura,2016,Total,27.50
+ES43,Extremadura,2017,Total,26.30
+ES43,Extremadura,2018,Total,23.70
+ES43,Extremadura,2019,Total,21.60
+ES43,Extremadura,2020,Total,21.80
+ES43,Extremadura,2021,Total,20.20
+ES43,Extremadura,2022,Total,17.30
+ES43,Extremadura,2023,Total,17.40
+ES43,Extremadura,2024,Total,15.50
+ES43,Extremadura,2025,Total,14.80
+ES51,Cataluña,2008,Total,8.90
+ES51,Cataluña,2009,Total,16.20
+ES51,Cataluña,2010,Total,17.70
+ES51,Cataluña,2011,Total,19.20
+ES51,Cataluña,2012,Total,22.50
+ES51,Cataluña,2013,Total,23.10
+ES51,Cataluña,2014,Total,20.30
+ES51,Cataluña,2015,Total,18.60
+ES51,Cataluña,2016,Total,15.70
+ES51,Cataluña,2017,Total,13.40
+ES51,Cataluña,2018,Total,11.50
+ES51,Cataluña,2019,Total,11.00
+ES51,Cataluña,2020,Total,12.60
+ES51,Cataluña,2021,Total,11.70
+ES51,Cataluña,2022,Total,10.00
+ES51,Cataluña,2023,Total,9.30
+ES51,Cataluña,2024,Total,8.90
+ES51,Cataluña,2025,Total,8.40
+ES52,C. Valenciana,2008,Total,12.00
+ES52,C. Valenciana,2009,Total,20.80
+ES52,C. Valenciana,2010,Total,22.90
+ES52,C. Valenciana,2011,Total,24.00
+ES52,C. Valenciana,2012,Total,27.20
+ES52,C. Valenciana,2013,Total,28.10
+ES52,C. Valenciana,2014,Total,25.80
+ES52,C. Valenciana,2015,Total,22.80
+ES52,C. Valenciana,2016,Total,20.60
+ES52,C. Valenciana,2017,Total,18.20
+ES52,C. Valenciana,2018,Total,15.60
+ES52,C. Valenciana,2019,Total,14.10
+ES52,C. Valenciana,2020,Total,16.20
+ES52,C. Valenciana,2021,Total,16.10
+ES52,C. Valenciana,2022,Total,13.30
+ES52,C. Valenciana,2023,Total,12.80
+ES52,C. Valenciana,2024,Total,12.60
+ES52,C. Valenciana,2025,Total,11.60
+ES53,Baleares,2008,Total,10.20
+ES53,Baleares,2009,Total,17.90
+ES53,Baleares,2010,Total,20.10
+ES53,Baleares,2011,Total,21.90
+ES53,Baleares,2012,Total,23.20
+ES53,Baleares,2013,Total,22.30
+ES53,Baleares,2014,Total,20.00
+ES53,Baleares,2015,Total,17.30
+ES53,Baleares,2016,Total,13.90
+ES53,Baleares,2017,Total,12.40
+ES53,Baleares,2018,Total,11.50
+ES53,Baleares,2019,Total,11.80
+ES53,Baleares,2020,Total,16.10
+ES53,Baleares,2021,Total,14.30
+ES53,Baleares,2022,Total,10.60
+ES53,Baleares,2023,Total,10.30
+ES53,Baleares,2024,Total,9.30
+ES53,Baleares,2025,Total,8.80
+ES61,Andalucía,2008,Total,17.70
+ES61,Andalucía,2009,Total,25.30
+ES61,Andalucía,2010,Total,27.80
+ES61,Andalucía,2011,Total,30.10
+ES61,Andalucía,2012,Total,34.40
+ES61,Andalucía,2013,Total,36.20
+ES61,Andalucía,2014,Total,34.80
+ES61,Andalucía,2015,Total,31.60
+ES61,Andalucía,2016,Total,28.90
+ES61,Andalucía,2017,Total,25.50
+ES61,Andalucía,2018,Total,23.00
+ES61,Andalucía,2019,Total,21.20
+ES61,Andalucía,2020,Total,22.30
+ES61,Andalucía,2021,Total,21.90
+ES61,Andalucía,2022,Total,19.10
+ES61,Andalucía,2023,Total,18.30
+ES61,Andalucía,2024,Total,16.50
+ES61,Andalucía,2025,Total,15.20
+ES62,Murcia,2008,Total,12.40
+ES62,Murcia,2009,Total,20.30
+ES62,Murcia,2010,Total,22.90
+ES62,Murcia,2011,Total,25.00
+ES62,Murcia,2012,Total,27.60
+ES62,Murcia,2013,Total,29.00
+ES62,Murcia,2014,Total,26.60
+ES62,Murcia,2015,Total,24.60
+ES62,Murcia,2016,Total,19.80
+ES62,Murcia,2017,Total,18.00
+ES62,Murcia,2018,Total,16.80
+ES62,Murcia,2019,Total,14.70
+ES62,Murcia,2020,Total,16.20
+ES62,Murcia,2021,Total,14.70
+ES62,Murcia,2022,Total,13.60
+ES62,Murcia,2023,Total,12.80
+ES62,Murcia,2024,Total,12.70
+ES62,Murcia,2025,Total,12.10
+ES63,Ceuta,2008,Total,17.40
+ES63,Ceuta,2009,Total,18.60
+ES63,Ceuta,2010,Total,24.00
+ES63,Ceuta,2011,Total,27.70
+ES63,Ceuta,2012,Total,37.00
+ES63,Ceuta,2013,Total,34.80
+ES63,Ceuta,2014,Total,31.90
+ES63,Ceuta,2015,Total,27.60
+ES63,Ceuta,2016,Total,24.90
+ES63,Ceuta,2017,Total,22.40
+ES63,Ceuta,2018,Total,29.00
+ES63,Ceuta,2019,Total,25.80
+ES63,Ceuta,2020,Total,24.50
+ES63,Ceuta,2021,Total,30.80
+ES63,Ceuta,2022,Total,30.00
+ES63,Ceuta,2023,Total,30.00
+ES63,Ceuta,2024,Total,27.50
+ES63,Ceuta,2025,Total,24.30
+ES64,Melilla,2008,Total,20.00
+ES64,Melilla,2009,Total,23.50
+ES64,Melilla,2010,Total,22.80
+ES64,Melilla,2011,Total,22.40
+ES64,Melilla,2012,Total,26.90
+ES64,Melilla,2013,Total,32.50
+ES64,Melilla,2014,Total,28.40
+ES64,Melilla,2015,Total,34.00
+ES64,Melilla,2016,Total,30.80
+ES64,Melilla,2017,Total,27.60
+ES64,Melilla,2018,Total,25.80
+ES64,Melilla,2019,Total,27.00
+ES64,Melilla,2020,Total,23.70
+ES64,Melilla,2021,Total,25.40
+ES64,Melilla,2022,Total,25.90
+ES64,Melilla,2023,Total,26.60
+ES64,Melilla,2024,Total,28.30
+ES64,Melilla,2025,Total,24.90
+ES70,Canarias,2008,Total,17.30
+ES70,Canarias,2009,Total,26.00
+ES70,Canarias,2010,Total,28.60
+ES70,Canarias,2011,Total,29.30
+ES70,Canarias,2012,Total,32.60
+ES70,Canarias,2013,Total,33.70
+ES70,Canarias,2014,Total,32.40
+ES70,Canarias,2015,Total,29.10
+ES70,Canarias,2016,Total,26.10
+ES70,Canarias,2017,Total,23.50
+ES70,Canarias,2018,Total,20.10
+ES70,Canarias,2019,Total,20.50
+ES70,Canarias,2020,Total,22.60
+ES70,Canarias,2021,Total,23.50
+ES70,Canarias,2022,Total,17.60
+ES70,Canarias,2023,Total,16.10
+ES70,Canarias,2024,Total,13.80
+ES70,Canarias,2025,Total,13.50

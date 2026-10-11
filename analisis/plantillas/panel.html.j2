@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empleo y vivienda en España</title>
+  <meta name="description" content="Panel con la evolución del paro y del precio de la vivienda en España, con datos abiertos de Eurostat actualizados cada semana.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <script>
+    try { const t = localStorage.getItem('panel:tema'); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --surface: #fcfcfb; --surface-2: #f3f3f0; --border: #e3e2dc;
+      --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #77766f;
+      --grid: #e8e7e2; --series-es: #2a78d6; --series-ue: #eb6834;
+      --series-pasado: #a3a29b; --conector: #d6d5cf;
+      --good: #0e7c3a; --bad: #c62828;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:where(:not([data-theme="light"])) {
+        color-scheme: dark;
+        --surface: #1a1a19; --surface-2: #242422; --border: #353532;
+        --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #9a998f;
+        --grid: #2e2e2b; --series-es: #3987e5; --series-ue: #d95926;
+        --series-pasado: #77766f; --conector: #45443f;
+        --good: #4cc27a; --bad: #ff7b72;
+      }
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --surface: #1a1a19; --surface-2: #242422; --border: #353532;
+      --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #9a998f;
+      --grid: #2e2e2b; --series-es: #3987e5; --series-ue: #d95926;
+      --series-pasado: #77766f; --conector: #45443f;
+      --good: #4cc27a; --bad: #ff7b72;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--surface); color: var(--text-primary);
+           font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
+    header.hero { max-width: 1120px; margin: 0 auto; padding: 40px 16px 8px;
+                  display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); line-height: 1.15; margin: 0 0 8px; }
+    h2 { font-size: 1.25rem; margin: 0 0 4px; }
+    .lead { color: var(--text-secondary); margin: 0; max-width: 65ch; }
+    .meta { color: var(--text-muted); font-size: .85rem; margin-top: 8px; }
+    a { color: var(--series-es); }
+    .tema { font: inherit; background: var(--surface-2); color: var(--text-primary); border: 1px solid var(--border);
+            border-radius: 10px; padding: 6px 10px; cursor: pointer; flex-shrink: 0; }
+
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 24px 0; }
+    .kpi { background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+    .kpi h3 { margin: 0; font-size: .85rem; font-weight: 500; color: var(--text-secondary); }
+    .kpi .valor { font-size: 2rem; font-weight: 700; margin: 4px 0 2px; font-variant-numeric: tabular-nums; }
+    .kpi .detalle { font-size: .85rem; color: var(--text-secondary); margin: 0; }
+    .kpi .detalle .icono { font-weight: 700; }
+    .mejora .icono { color: var(--good); } .empeora .icono { color: var(--bad); }
+
+    .claves { background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; }
+    .claves ul { margin: 8px 0 0; padding-left: 20px; } .claves li { margin: 6px 0; }
+
+    section.bloque { margin-top: 40px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 24px; }
+    figure { margin: 16px 0 0; } figcaption { font-weight: 600; margin-bottom: 4px; }
+    .grafico { width: 100%; height: 340px; }
+    .nota { color: var(--text-muted); font-size: .85rem; margin: 6px 0 0; }
+
+    .segmented { display: inline-flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 3px; margin: 4px 0 8px; }
+    .segmented button { font: inherit; font-size: .85rem; border: 0; background: transparent; color: var(--text-secondary);
+                        padding: 4px 12px; border-radius: 7px; cursor: pointer; }
+    .segmented button[aria-pressed="true"] { background: var(--surface); color: var(--text-primary); box-shadow: 0 1px 2px rgb(0 0 0 / .15); }
+    .segmented button:focus-visible, .tema:focus-visible { outline: 2px solid var(--series-es); outline-offset: 2px; }
+    details { margin-top: 12px; } summary { cursor: pointer; color: var(--text-secondary); font-size: .9rem; }
+    .tabla-wrap { overflow-x: auto; }
+    table { border-collapse: collapse; font-size: .85rem; margin-top: 8px; font-variant-numeric: tabular-nums; }
+    th, td { padding: 4px 12px; border-bottom: 1px solid var(--border); text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    th { color: var(--text-secondary); font-weight: 500; }
+
+    footer { max-width: 1120px; margin: 0 auto; padding: 24px 16px 48px; border-top: 1px solid var(--border);
+             color: var(--text-secondary); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <h1>Empleo y vivienda en España</h1>
+      <p class="lead">Cómo evolucionan el paro y el precio de la vivienda, comparados con la Unión Europea y entre comunidades autónomas.</p>
+      <p class="meta">Datos de Eurostat hasta {{ resumen.fecha.strftime('%m/%Y') }} · Panel actualizado el {{ actualizado }}</p>
+    </div>
+    <button class="tema" id="tema" type="button" aria-label="Cambiar entre tema claro y oscuro">◐ Tema</button>
+  </header>
+
+  <main>
+    <section class="kpis" aria-label="Indicadores principales">
+      {% for k in resumen.kpis %}
+      <article class="kpi {{ k.tendencia }}">
+        <h3>{{ k.titulo }}</h3>
+        <p class="valor">{{ k.valor }}</p>
+        <p class="detalle">{% if k.tendencia == 'mejora' %}<span class="icono" aria-label="mejora">▼</span> {% elif k.tendencia == 'empeora' %}<span class="icono" aria-label="empeora">▲</span> {% endif %}{{ k.detalle }}</p>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section class="claves">
+      <h2>Claves</h2>
+      <ul>{% for f in resumen.frases %}<li>{{ f }}</li>{% endfor %}</ul>
+    </section>
+
+    <section class="bloque">
+      <h2>El paro, mes a mes</h2>
+      <p class="lead">Tasa de paro desestacionalizada: porcentaje de la población activa que busca empleo y no lo encuentra.</p>
+      <div class="grid-2">
+        <figure><figcaption>Toda la población</figcaption><div class="grafico" id="paro_total" role="img" aria-label="Tasa de paro mensual en España y la UE"></div></figure>
+        <figure><figcaption>Menores de 25 años</figcaption><div class="grafico" id="paro_joven" role="img" aria-label="Tasa de paro juvenil mensual en España y la UE"></div></figure>
+      </div>
+      <details>
+        <summary>Ver los datos de los últimos 12 meses</summary>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th>Mes</th><th>España</th><th>UE-27</th><th>España &lt;25</th><th>UE-27 &lt;25</th></tr></thead>
+          <tbody>{% for mes, fila in tabla_mensual.iterrows() %}<tr><td>{{ mes }}</td>{% for v in fila %}<td>{{ v|num }} %</td>{% endfor %}</tr>{% endfor %}</tbody>
+        </table></div>
+      </details>
+    </section>
+
+    <section class="bloque">
+      <h2>Por comunidades autónomas ({{ resumen.anio_regiones }})</h2>
+      <p class="lead">Tasa de paro anual. La línea de puntos marca la media de España.</p>
+      <div class="grid-2">
+        <figure><figcaption>Tasa de paro por comunidad</figcaption>
+          <div class="segmented" role="group" aria-label="Grupo de edad">
+            <button type="button" data-grupo="0" aria-pressed="true">Total</button>
+            <button type="button" data-grupo="1" aria-pressed="false">15 a 24 años</button>
+          </div>
+          <div class="grafico" id="regiones" style="height:620px" role="img" aria-label="Tasa de paro por comunidad autónoma"></div></figure>
+        <figure><figcaption>{{ anio_crisis }} frente a {{ resumen.anio_regiones }}: cuánto ha bajado</figcaption><div class="grafico" id="recuperacion" style="height:620px" role="img" aria-label="Tasa de paro por comunidad en {{ anio_crisis }} y en {{ resumen.anio_regiones }}"></div></figure>
+      </div>
+      <details>
+        <summary>Ver la tabla por comunidades</summary>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th>Comunidad</th><th>Total</th><th>15 a 24 años</th></tr></thead>
+          <tbody>{% for region, fila in tabla_regiones.iterrows() %}<tr><td>{{ region }}</td><td>{{ fila['Total']|num }} %</td><td>{{ fila['15 a 24 años']|num }} %</td></tr>{% endfor %}</tbody>
+        </table></div>
+      </details>
+    </section>
+
+    <section class="bloque">
+      <h2>El precio de la vivienda</h2>
+      <p class="lead">Índice de precios de la vivienda (nueva y usada), con base 100 en 2015.</p>
+      <figure><div class="grafico" id="vivienda" role="img" aria-label="Índice de precios de la vivienda en España y la UE"></div></figure>
+      <p class="nota">Un valor de 150 significa que la vivienda cuesta un 50 % más que en 2015.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Fuente:</strong> Eurostat (datasets <code>une_rt_m</code>, <code>lfst_r_lfu3rt</code> y <code>prc_hpi_q</code>). Los datos se descargan cada semana con GitHub Actions.</p>
+    <p><strong>Descargar datos:</strong> <a href="datos/paro_mensual.csv">paro mensual</a> · <a href="datos/paro_regiones.csv">paro por comunidades</a> · <a href="datos/precio_vivienda.csv">precio de la vivienda</a></p>
+    <p>Hecho con Python, pandas y Plotly · <a href="https://github.com/munguiagomezj/Proyecto3">Código en GitHub</a></p>
+  </footer>
+
+  <script src="{{ plotly_js }}"></script>
+  <script>
+    const FIGURAS = {{ figuras_json | safe }};
+
+    function css(nombre) { return getComputedStyle(document.documentElement).getPropertyValue(nombre).trim(); }
+
+    // Aplica los colores del tema actual a cada traza según su papel (meta).
+    const estado = { grupoRegiones: 0 };
+
+    // Figura de comunidades: solo se ve el grupo elegido y su media de España.
+    function aplicarGrupo(fig) {
+      if (!fig.grupos) return fig;
+      const g = estado.grupoRegiones, media = fig.medias[g];
+      const layout = { ...fig.layout,
+        shapes: fig.layout.shapes.map((s) => ({ ...s, x0: media, x1: media })),
+        annotations: fig.layout.annotations.map((a) => ({ ...a, x: media,
+          text: `España: ${media.toLocaleString('es-ES', { minimumFractionDigits: 1 })} %` })) };
+      return { ...fig, layout, data: fig.data.map((t, i) => ({ ...t, visible: i === g })) };
+    }
+
+    function colorear(fig) {
+      fig = aplicarGrupo(fig);
+      const c = {
+        es: css('--series-es'), ue: css('--series-ue'), pasado: css('--series-pasado'),
+        barra: css('--series-es'), conector: css('--conector'),
+      };
+      const texto = css('--text-primary'), secundario = css('--text-secondary'), grid = css('--grid');
+      const data = fig.data.map((t) => {
+        const color = c[t.meta];
+        const out = { ...t };
+        if (t.type === 'bar') out.marker = { color, cornerradius: 4 };
+        else if (t.mode === 'markers') out.marker = { ...t.marker, color, line: { color: css('--surface'), width: 2 } };
+        else out.line = { ...t.line, color };
+        if (t.type === 'bar') out.textfont = { color: secundario };
+        return out;
+      });
+      const eje = (e) => ({ ...e, gridcolor: grid, linecolor: grid, tickfont: { color: secundario } });
+      const layout = {
+        ...fig.layout,
+        paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
+        font: { ...fig.layout.font, color: texto },
+        xaxis: eje(fig.layout.xaxis), yaxis: eje(fig.layout.yaxis),
+        hoverlabel: { bgcolor: css('--surface-2'), bordercolor: css('--border'), font: { color: texto } },
+        shapes: (fig.layout.shapes || []).map((s) => ({ ...s, line: { ...s.line, color: secundario } })),
+        annotations: (fig.layout.annotations || []).map((a) => ({ ...a, font: { color: secundario, size: 12 } })),
+      };
+      return { data, layout };
+    }
+
+    function pintar() {
+      if (!window.Plotly) return;
+      for (const [id, fig] of Object.entries(FIGURAS)) {
+        const { data, layout } = colorear(fig);
+        Plotly.react(id, data, layout, { displayModeBar: false, responsive: true, locale: 'es' });
+      }
+    }
+
+    document.querySelectorAll('.segmented button').forEach((btn) => btn.addEventListener('click', () => {
+      estado.grupoRegiones = Number(btn.dataset.grupo);
+      document.querySelectorAll('.segmented button').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      pintar();
+    }));
+
+    document.getElementById('tema').addEventListener('click', () => {
+      const root = document.documentElement;
+      const oscuro = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      root.dataset.theme = oscuro ? 'light' : 'dark';
+      try { localStorage.setItem('panel:tema', root.dataset.theme); } catch {}
+      pintar();
+    });
+    matchMedia('(prefers-color-scheme: dark)').addEventListener('change', pintar);
+    pintar();
+  </script>
+</body>
+</html>

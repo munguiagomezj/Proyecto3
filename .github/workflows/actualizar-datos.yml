@@ -19,6 +19,7 @@ jobs:
           cache: pip
       - run: pip install -e .
       - run: python -m scripts.descargar_datos
+      - run: python -m scripts.procesar_datos
       - name: Guardar los datos si han cambiado
         run: |
           git config user.name "github-actions[bot]"
