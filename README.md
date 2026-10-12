@@ -2,7 +2,7 @@
 
 Panel interactivo sobre la evolución del **paro** (general y juvenil, España frente a la UE y por comunidades autónomas) y del **precio de la vivienda**. Usa datos abiertos de **Eurostat** que se descargan y publican solos cada semana.
 
-**🔗 Panel en vivo:** https://munguiagomezj.github.io/Proyecto3/ · **📓 Análisis:** [notebooks/analisis.ipynb](notebooks/analisis.ipynb)
+**🔗 Panel en vivo:** https://munguiagomezj.github.io/empleo-vivienda-espana/ · **📓 Análisis:** [notebooks/analisis.ipynb](notebooks/analisis.ipynb)
 
 ![Captura del panel](docs/panel-claro.png)
 
